@@ -38,7 +38,7 @@ class EventManager:
 	##
 	##Example: Start = "2019-02-16" for 16 february 2019
 	def __init__(self, start, end):
-		self.url = "https://intra.epitech.eu/auth-6f2226bcc4e95b0ab4fcc1ea0c41185cd6b088ef/planning/load?format=json&start=" + start + "&end=" + end
+		self.url = "https://intra.epitech.eu/YOUR_AUTOLOGIN/planning/load?format=json&start=" + start + "&end=" + end
 		self.updateJson()
 		self.buildListFromJson()
 
