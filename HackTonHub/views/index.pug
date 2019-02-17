@@ -1,0 +1,23 @@
+﻿extends layout
+
+block content
+    div(class="table")
+        div(class="row header")
+            div(class="cell") Titre
+            div(class="cell") Durée
+            div(class="cell") Salle(s)
+            div(class="cell") Places
+            div(class="cell") Type
+        each jsonObj in json
+            - var title = jsonObj.acti_title
+            - var duree = jsonObj.nb_hours
+            - var salle = jsonObj.room.code
+            - var place = jsonObj.room.seats
+            - var type = jsonObj.type_title
+            if jsonObj.codemodule == "B-INN-000"
+                div(class="row")
+                    div(class="cell" data-title="Titre") #{title}
+                    div(class="cell" data-title="Durée") #{duree}
+                    div(class="cell" data-title="Salle(s)") #{salle.slice(salle.lastIndexOf('/') + 1)}
+                    div(class="cell" data-title="Places") #{place}
+                    div(class="cell" data-title="Type") #{type}

@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>HackTonHub</Name>
+    <RootNamespace>HackTonHub</RootNamespace>
+    <LastActiveSolutionConfig>Release|Any CPU</LastActiveSolutionConfig>
+    <SaveNodeJsSettingsInProjectFile>True</SaveNodeJsSettingsInProjectFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>cd55b112-0f55-46c5-b98e-8724eb5ecec0</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>app.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>1337</NodejsPort>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
+    <TypeScriptToolsVersion>3.1</TypeScriptToolsVersion>
+    <EnableTypeScript>true</EnableTypeScript>
+    <StartWebBrowser>True</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="app.ts" />
+    <TypeScriptCompile Include="routes\index.ts" />
+    <Content Include="public\css\main.css" />
+    <Content Include="public\css\util.css" />
+    <Content Include="public\fonts\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="public\fonts\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="public\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="public\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="public\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="public\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="public\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="public\fonts\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="public\fonts\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="public\fonts\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="public\fonts\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="public\fonts\font-awesome-4.7.0\less\core.less" />
+    <Content Include="public\fonts\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="public\fonts\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="public\fonts\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="public\fonts\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="public\fonts\font-awesome-4.7.0\less\list.less" />
+    <Content Include="public\fonts\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="public\fonts\font-awesome-4.7.0\less\path.less" />
+    <Content Include="public\fonts\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="public\fonts\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="public\fonts\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="public\fonts\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="public\fonts\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="public\fonts\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="public\fonts\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="public\fonts\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="public\fonts\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="public\fonts\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="public\fonts\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="public\fonts\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="public\fonts\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="public\fonts\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="public\fonts\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="public\fonts\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="public\fonts\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="public\fonts\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="public\fonts\OpenSans\OpenSans-Bold.ttf" />
+    <Content Include="public\fonts\OpenSans\OpenSans-BoldItalic.ttf" />
+    <Content Include="public\fonts\OpenSans\OpenSans-ExtraBold.ttf" />
+    <Content Include="public\fonts\OpenSans\OpenSans-ExtraBoldItalic.ttf" />
+    <Content Include="public\fonts\OpenSans\OpenSans-Italic.ttf" />
+    <Content Include="public\fonts\OpenSans\OpenSans-Light.ttf" />
+    <Content Include="public\fonts\OpenSans\OpenSans-LightItalic.ttf" />
+    <Content Include="public\fonts\OpenSans\OpenSans-Regular.otf" />
+    <Content Include="public\fonts\OpenSans\OpenSans-Regular.ttf" />
+    <Content Include="public\fonts\OpenSans\OpenSans-SemiBold.ttf" />
+    <Content Include="public\fonts\OpenSans\OpenSans-SemiBoldItalic.ttf" />
+    <Content Include="public\fonts\poppins\Poppins-Black.ttf" />
+    <Content Include="public\fonts\poppins\Poppins-BlackItalic.ttf" />
+    <Content Include="public\fonts\poppins\Poppins-Bold.ttf" />
+    <Content Include="public\fonts\poppins\Poppins-BoldItalic.ttf" />
+    <Content Include="public\fonts\poppins\Poppins-ExtraBold.ttf" />
+    <Content Include="public\fonts\poppins\Poppins-ExtraBoldItalic.ttf" />
+    <Content Include="public\fonts\poppins\Poppins-ExtraLight.ttf" />
+    <Content Include="public\fonts\poppins\Poppins-ExtraLightItalic.ttf" />
+    <Content Include="public\fonts\poppins\Poppins-Italic.ttf" />
+    <Content Include="public\fonts\poppins\Poppins-Light.ttf" />
+    <Content Include="public\fonts\poppins\Poppins-LightItalic.ttf" />
+    <Content Include="public\fonts\poppins\Poppins-Medium.ttf" />
+    <Content Include="public\fonts\poppins\Poppins-MediumItalic.ttf" />
+    <Content Include="public\fonts\poppins\Poppins-Regular.ttf" />
+    <Content Include="public\fonts\poppins\Poppins-SemiBold.ttf" />
+    <Content Include="public\fonts\poppins\Poppins-SemiBoldItalic.ttf" />
+    <Content Include="public\fonts\poppins\Poppins-Thin.ttf" />
+    <Content Include="public\fonts\poppins\Poppins-ThinItalic.ttf" />
+    <Content Include="public\images\icons\favicon.ico" />
+    <Content Include="tsconfig.json" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="public\vendor\animate\animate.css" />
+    <Content Include="public\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="public\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="public\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="public\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="public\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="public\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="public\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="public\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="public\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="public\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="public\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="public\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="public\vendor\perfect-scrollbar\perfect-scrollbar.css" />
+    <Content Include="public\vendor\select2\select2.css" />
+    <Content Include="public\vendor\select2\select2.min.css" />
+    <Content Include="views\index.pug" />
+    <Content Include="views\layout.pug" />
+    <Content Include="views\error.pug" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="public\css\" />
+    <Folder Include="public\fonts\" />
+    <Folder Include="public\fonts\font-awesome-4.7.0\" />
+    <Folder Include="public\fonts\font-awesome-4.7.0\css\" />
+    <Folder Include="public\fonts\font-awesome-4.7.0\fonts\" />
+    <Folder Include="public\fonts\font-awesome-4.7.0\less\" />
+    <Folder Include="public\fonts\font-awesome-4.7.0\scss\" />
+    <Folder Include="public\fonts\OpenSans\" />
+    <Folder Include="public\fonts\poppins\" />
+    <Folder Include="public\images\" />
+    <Folder Include="public\images\icons\" />
+    <Folder Include="public\" />
+    <Folder Include="public\images\" />
+    <Folder Include="public\javascripts\" />
+    <Folder Include="routes\" />
+    <Folder Include="public\vendor\" />
+    <Folder Include="public\vendor\animate\" />
+    <Folder Include="public\vendor\bootstrap\" />
+    <Folder Include="public\vendor\bootstrap\css\" />
+    <Folder Include="public\vendor\bootstrap\js\" />
+    <Folder Include="public\vendor\jquery\" />
+    <Folder Include="public\vendor\perfect-scrollbar\" />
+    <Folder Include="public\vendor\select2\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="public\vendor\bootstrap\js\bootstrap.js" />
+    <Compile Include="public\vendor\bootstrap\js\bootstrap.min.js" />
+    <Compile Include="public\vendor\bootstrap\js\popper.js" />
+    <Compile Include="public\vendor\bootstrap\js\popper.min.js" />
+    <Compile Include="public\vendor\bootstrap\js\tooltip.js" />
+    <Compile Include="public\vendor\jquery\jquery-3.2.1.min.js" />
+    <Compile Include="public\vendor\perfect-scrollbar\perfect-scrollbar.min.js" />
+    <Compile Include="public\vendor\select2\select2.js" />
+    <Compile Include="public\vendor\select2\select2.min.js" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

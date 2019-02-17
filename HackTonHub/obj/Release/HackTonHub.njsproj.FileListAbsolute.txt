@@ -1,0 +1,2 @@
+E:\VisualStudio project\hackTonHub\HackTonHub\HackTonHub\obj\Release\HackTonHub.njsproj.CoreCompileInputs.cache
+E:\VisualStudio project\hackTonHub\HackTonHub\HackTonHub\bin\Microsoft.NodejsTools.WebRole.dll
